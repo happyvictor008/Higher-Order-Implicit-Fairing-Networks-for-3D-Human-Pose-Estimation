@@ -1,5 +1,6 @@
 # HIgh-order-GCNII
-High-order GCN with Initial residual and Identity mapping on 3D Human Pose estimation 
+High-order GCN with Initial residual and Identity mapping on 3D Human Pose estimation.
+In this section we rewrite the original GCN layer to GCNII layer and apply it on a 10-layer model without residual connection.  
 ### Results on Human3.6M
 
 Under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint position error after rigid alignment).
@@ -67,3 +68,22 @@ You can generate visualizations of the model predictions by running:
 python viz.py --architecture gcn --evaluate ${CHECKPOINT_PATH} --viz_subject S11 --viz_action Walking --viz_camera 0 --viz_output output.gif --viz_size 3 --viz_downsample 2 --viz_limit 60
 ```
 The script can also export MP4 videos and supports a variety of parameters (e.g. downsampling/FPS, size, bitrate). See [`viz.py`](viz.py) for more details.
+
+### References
+
+[1] Martinez et al. [A simple yet effective baseline for 3d human pose estimation](https://arxiv.org/pdf/1705.03098.pdf). ICCV 2017.
+
+[2] Pavllo et al. [3D human pose estimation in video with temporal convolutions and semi-supervised training](https://arxiv.org/pdf/1811.11742.pdf). CVPR 2019.
+
+[3] Zhao et al. [Semantic Graph Convolutional Networks for 3D Human Pose Regression](https://arxiv.org/pdf/1904.03345.pdf). CVPR 2019.
+
+
+## Acknowledgement
+This code is extended from the following repositories.
+- [3d-pose-baseline](https://github.com/una-dinosauria/3d-pose-baseline)
+- [3d_pose_baseline_pytorch](https://github.com/weigq/3d_pose_baseline_pytorch)
+- [VideoPose3D](https://github.com/facebookresearch/VideoPose3D)
+- [Semantic GCN](https://github.com/garyzhao/SemGCN)
+
+Thank the authors for releasing their codes. Please also consider citing their works.
+
