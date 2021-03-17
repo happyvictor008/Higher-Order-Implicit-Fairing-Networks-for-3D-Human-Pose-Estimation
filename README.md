@@ -3,7 +3,7 @@ High-order GCN with Initial residual and Identity mapping on 3D Human Pose estim
 In this section we rewrite the original GCN layer to GCNII layer and apply it on a 10-layer model without residual connection.  
 ### Results on Human3.6M
 
-Under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint position error after rigid alignment).
+Ground truth detection rtesluts under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint position error after rigid alignment).
 
 | Method | 2D Detections | # of Epochs | # of Parameters | MPJPE (P1) | P-MPJPE (P2) |
 |:-------|:-------:|:-------:|:-------:|:-------:|:-------:|
@@ -13,8 +13,22 @@ Under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint 
 | HGCN   | Ground truth | 50 |  1.20M  | 39.52 mm | 31.07 mm |
 | HGCNII(Ours)   | Ground truth | 50 |  1.20M  | **39.16 mm** | **30.83 mm** |
 
-Results using Ground truth are reported. 
+
+CPN detection rtesluts under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint position error after rigid alignment).
+
+| Method | 2D Detections | # of Epochs | # of Parameters | MPJPE (P1) | P-MPJPE (P2) |
+|:-------|:-------:|:-------:|:-------:|:-------:|:-------:|
+| Martinez et al. [1] | Ground truth | 200  | 4.29M | 44.40 mm | 35.25 mm |
+| SemGCN | Ground truth | 50 | 0.27M | 42.14 mm | 33.53 mm |
+| SemGCN (w/ Non-local) | Ground truth | 30 | 0.43M | 40.78 mm | 31.46 mm |
+| HGCN   | Ground truth | 50 |  1.20M  | 39.52 mm | 31.07 mm |
+| HGCNII(Ours)   | Ground truth | 50 |  1.20M  | **39.16 mm** | **30.83 mm** |
+
 The results are borrowed from [SemGCN](https://github.com/garyzhao/SemGCN) and [High-order GCN](https://github.com/ZhimingZo/HGCN).
+
+
+
+
 ## Quickstart
 
 This repository is build upon Python v3.7 and Pytorch v1.3.1 on Anaconda. All experiments are conducted on a single NVIDIA RTX 2070i GPU. See [`requirements.txt`](requirements.txt) for other dependencies. We recommend installing Python v3.7 from [Anaconda](https://www.anaconda.com/) and installing Pytorch (>= 1.3.1) following guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version. Then you can install dependencies with the following commands.
