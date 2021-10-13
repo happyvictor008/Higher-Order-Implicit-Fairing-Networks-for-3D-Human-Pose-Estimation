@@ -19,7 +19,7 @@ CPN detection rtesluts under Protocol 1 (mean per-joint position error) and Prot
 | Method | 2D Detections | # of Epochs | # of Parameters | MPJPE (P1) | P-MPJPE (P2) |
 |:-------|:-------:|:-------:|:-------:|:-------:|:-------:|
 | HGCN   | CPN deteciton | 50 |  1.20M  | 55.60 mm | 43.70 mm |
-| HGCNII(Ours)   | CPN deteciton | 50 |  1.20M  | **54.80 mm** | **42.90 mm** |
+| HOIF-Net(Ours)   | CPN deteciton | 50 |  1.20M  | **54.80 mm** | **42.90 mm** |
 
 The results are borrowed from [SemGCN](https://github.com/garyzhao/SemGCN) and [High-order GCN](https://github.com/ZhimingZo/HGCN).
 
