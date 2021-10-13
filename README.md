@@ -11,7 +11,7 @@ Ground truth detection rtesluts under Protocol 1 (mean per-joint position error)
 | SemGCN | Ground truth | 50 | 0.27M | 42.14 mm | 33.53 mm |
 | SemGCN (w/ Non-local) | Ground truth | 30 | 0.43M | 40.78 mm | 31.46 mm |
 | HGCN   | Ground truth | 50 |  1.20M  | 39.52 mm | 31.07 mm |
-| HGCNII(Ours)   | Ground truth | 50 |  1.20M  | **39.16 mm** | **30.83 mm** |
+| HOIF-Net(Ours)   | Ground truth | 50 |  1.20M  | **39.16 mm** | **30.83 mm** |
 
 
 CPN detection rtesluts under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint position error after rigid alignment).
