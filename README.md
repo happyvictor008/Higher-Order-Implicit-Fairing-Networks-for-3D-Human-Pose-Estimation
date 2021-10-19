@@ -31,8 +31,8 @@ The results are borrowed from [SemGCN](https://github.com/garyzhao/SemGCN) and [
 This repository is build upon Python v3.7 and Pytorch v1.3.1 on Anaconda. All experiments are conducted on a single NVIDIA RTX 2070 Super GPU. See [`requirements.txt`](requirements.txt) for other dependencies. We recommend installing Python v3.7 from [Anaconda](https://www.anaconda.com/) and installing Pytorch (>= 1.3.1) following guide on the [official instructions](https://pytorch.org/) according to your specific CUDA version. Then you can install dependencies with the following commands.
 
 ```
-git clone https://github.com/happyvictor008/HIgh-order-GCNII.git
-cd HIgh-order-GCNII
+git clone https://github.com/happyvictor008/Higher-Order-Implicit-Fairing-Networks-for-3D-Human-Pose-Estimation.git
+cd Higher-Order-Implicit-Fairing-Networks-for-3D-Human-Pose-Estimation
 pip install -r requirements.txt
 ```
 
