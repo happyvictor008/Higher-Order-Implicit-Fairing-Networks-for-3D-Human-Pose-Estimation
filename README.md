@@ -59,7 +59,7 @@ After this step, you should end up with two files in the data directory: data_3d
 
 ### Training from scratch
 To train the model, run the following commands.
-For HGCNII on ground truth input:
+For HOIF-Net on ground truth input:
 ```
 python main_gcn.py --keypoints gt
 ```
