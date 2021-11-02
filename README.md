@@ -1,6 +1,5 @@
-# HIgh-order-GCNII
-High-order GCN with Initial residual and Identity mapping on 3D Human Pose estimation.
-In this section we rewrite the original GCN layer to GCNII layer and apply it on a 10-layer model without residual connection.  
+#Higher-Order-Implicit-Fairing-Networks-for-3D-Human-Pose-Estimation 
+Higher-Order-Implicit-Fairing-Networks-for-3D-Human-Pose-Estimation.
 ### Results on Human3.6M
 
 Ground truth detection rtesluts under Protocol 1 (mean per-joint position error) and Protocol 2 (mean per-joint position error after rigid alignment).
