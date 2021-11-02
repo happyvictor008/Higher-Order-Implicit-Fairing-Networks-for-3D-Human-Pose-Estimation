@@ -1,5 +1,5 @@
 ## Higher Order Implicit Fairing Networks for 3D Human Pose Estimation
-High-order GCN with Initial residual and Identity mapping on 3D Human Pose estimation.
+Higher Order Implicit Fairing Networks for 3D Human Pose Estimation.
 
 ### Results on Human3.6M
 
